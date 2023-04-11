@@ -7,7 +7,7 @@ export function Header() {
   const { page, setPage, setInput, setOutput } = useContext(InputContext);
   return (
     <header className={styles.pagesBtns}>
-      <button
+      {/* <button
         onClick={() => {
           setPage(0);
           setInput("");
@@ -19,7 +19,7 @@ export function Header() {
         disabled={page === 0}
       >
         Caesar Cipher
-      </button>
+      </button> */}
       <button
         onClick={() => {
           setPage(1);

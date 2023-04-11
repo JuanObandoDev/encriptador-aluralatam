@@ -9,9 +9,7 @@ export function Pages() {
   return (
     <>
       {page === 0 ? (
-        <>
-          <CaesarCipher />
-        </>
+        <>{/* <CaesarCipher /> */}</>
       ) : (
         <>
           <AluraEncoderDecoder />
