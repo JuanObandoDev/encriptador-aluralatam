@@ -7,13 +7,6 @@ const vowels = {
 };
 
 export const AluraEncoder = (str) => {
-  let newStr = "";
-  for (let i = 0; i < str.length; i++) {
-    if (vowels[str[i]]) {
-      newStr += vowels[str[i]];
-    } else {
-      newStr += str[i];
-    }
-  }
-  return newStr;
+  let regex = new RegExp(`[${Object.keys(vowels).join("")}]`, "g");
+  return str.replace(regex, (match) => vowels[match]);
 };
