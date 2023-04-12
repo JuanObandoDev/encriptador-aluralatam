@@ -34,14 +34,9 @@ export function AluraEncoderDecoder() {
       </div>
       <div className={styles.out}>
         <h1 className={styles.titleOut}>Output</h1>
-        <textarea
-          className={styles.output}
-          readonly
-          value={output}
-          placeholder="Typenter ainy tenterxt"
-        ></textarea>
+        <p className={styles.output}>{output}</p>
         <button className={styles.copyBtn} onClick={() => CopyValue(output)}>
-          copy
+          Copy
         </button>
       </div>
     </div>
