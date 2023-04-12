@@ -8,6 +8,14 @@ import styles from "../styles/AluraEncoderDecoder.module.css";
 
 export function AluraEncoderDecoder() {
   const { input, setInput, output, setOutput } = useContext(InputContext);
+  const vowels = {
+    a: "ai",
+    e: "enter",
+    i: "imes",
+    o: "ober",
+    u: "ufat",
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.entry}>
@@ -20,13 +28,13 @@ export function AluraEncoderDecoder() {
         <div className={styles.Btns}>
           <button
             className={styles.aluraEncoderBtn}
-            onClick={() => setOutput(AluraEncoder(input))}
+            onClick={() => setOutput(AluraEncoder(input, vowels))}
           >
             Enconder
           </button>
           <button
             className={styles.aluraDecoderBtn}
-            onClick={() => setOutput(AluraDecoder(input))}
+            onClick={() => setOutput(AluraDecoder(input, vowels))}
           >
             Decoder
           </button>
