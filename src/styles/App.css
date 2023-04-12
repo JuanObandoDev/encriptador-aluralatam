@@ -1,9 +1,24 @@
 body {
-    background: #312e2b;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+}
+
+.logo {
+    margin: 0;
+    color: #0A3871;
+    font-size: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 4rem;
+    }
 }
