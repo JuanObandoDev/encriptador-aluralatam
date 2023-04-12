@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/encriptador-aluralatam/static/css/main.0ec89b75.css",
+    "main.js": "/encriptador-aluralatam/static/js/main.01422c2e.js",
+    "index.html": "/encriptador-aluralatam/index.html",
+    "main.0ec89b75.css.map": "/encriptador-aluralatam/static/css/main.0ec89b75.css.map",
+    "main.01422c2e.js.map": "/encriptador-aluralatam/static/js/main.01422c2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ec89b75.css",
+    "static/js/main.01422c2e.js"
+  ]
+}
