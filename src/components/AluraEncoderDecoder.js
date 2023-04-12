@@ -22,7 +22,10 @@ export function AluraEncoderDecoder() {
         <h1 className={styles.titleEntry}>Entry</h1>
         <textarea
           className={styles.input}
-          onChange={(e) => setInput(e.target.value.toLowerCase())}
+          onChange={(e) => {
+            setInput(e.target.value.toLowerCase());
+            setOutput("");
+          }}
           placeholder="Type any text"
         ></textarea>
         <div className={styles.Btns}>
