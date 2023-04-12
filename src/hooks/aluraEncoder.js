@@ -6,7 +6,7 @@ const vowels = {
   u: "ufat",
 };
 
-export const AluraEncoder = (str) => {
-  let regex = new RegExp(`[${Object.keys(vowels).join("")}]`, "g");
-  return str.replace(regex, (match) => vowels[match]);
+export const AluraEncoder = (str, dict = vowels) => {
+  let regex = new RegExp(`[${Object.keys(dict).join("")}]`, "g");
+  return str.replace(regex, (match) => dict[match]);
 };
