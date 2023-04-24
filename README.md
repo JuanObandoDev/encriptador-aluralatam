@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an application that uses structures JSX, CSS and Javascript with the React framework, to encrypt and decrypt text. Encryption is done by replacing vowels with words according to a specific set of rules. The application only accepts lowercase letters and accents and special characters are not allowed.
 
-## Available Scripts
+The web page has fields so that the user can enter the text to be encrypted or decrypted and select the corresponding option. The result of the operation is displayed on the screen and there is the option to copy the encrypted or decrypted text to the clipboard using a "copy" button.
 
-In the project directory, you can run:
+# Dictionaries
 
-### `npm start`
+## Encryption dictionary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Key | Value |
+| --- | ----- |
+| e   | enter |
+| i   | imes  |
+| a   | ai    |
+| o   | ober  |
+| u   | ufat  |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Decryption dictionary
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Key   | Value |
+| ----- | ----- |
+| enter | e     |
+| imes  | i     |
+| ai    | a     |
+| ober  | o     |
+| ufat  | u     |
 
-### `npm run build`
+# Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Must work only with lowercase letters
+- Letters with accents or special characters should not be used
+- It should be possible to convert a word to the encrypted version also to return an encrypted word to its original version. (e.g. "cat" => "cait" | "cait" => "cat")
+- The page must have fields for
+  insertion of the text that will be encrypted or decrypted, and the user must be able to choose between the two options.
+- The result must be displayed on the screen.
+- A button that copies the encrypted/decrypted text for the transfer section, that is, it has the same functionality as ctrl+C or the "copy" option from the applications menu.
