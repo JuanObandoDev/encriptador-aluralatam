@@ -1,14 +1,14 @@
 import React from "react";
 import { useContext } from "react";
-import { InputContext } from "../context/inputContext";
-import { AluraDecoder } from "../hooks/aluraDecoder.js";
-import { AluraEncoder } from "../hooks/aluraEncoder.js";
-import { CopyValue } from "../hooks/copyValue.js";
-import styles from "../styles/AluraEncoderDecoder.module.css";
+import { InputContext } from "../../context/inputContext/inputContext";
+import { AluraDecoder } from "../../hooks/useAluraDecoder/useAluraDecoder.js";
+import { AluraEncoder } from "../../hooks/useAluraEncoder/useAluraEncoder.js";
+import { CopyValue } from "../../hooks/useCopyValue/useCopyValue.js";
+import styles from "../../styles/AluraEncoderDecoder.module.css";
 
 export function AluraEncoderDecoder() {
   const { input, setInput, output, setOutput } = useContext(InputContext);
-  const vowels = {
+  const aluraDictionary = {
     a: "ai",
     e: "enter",
     i: "imes",
@@ -31,13 +31,13 @@ export function AluraEncoderDecoder() {
         <div className={styles.Btns}>
           <button
             className={styles.aluraEncoderBtn}
-            onClick={() => setOutput(AluraEncoder(input, vowels))}
+            onClick={() => setOutput(AluraEncoder(input, aluraDictionary))}
           >
             Enconder
           </button>
           <button
             className={styles.aluraDecoderBtn}
-            onClick={() => setOutput(AluraDecoder(input, vowels))}
+            onClick={() => setOutput(AluraDecoder(input, aluraDictionary))}
           >
             Decoder
           </button>
