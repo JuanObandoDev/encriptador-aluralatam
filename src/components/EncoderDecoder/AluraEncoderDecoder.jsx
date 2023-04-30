@@ -1,20 +1,22 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
+
 import { InputContext } from "../../context/inputContext/inputContext";
 import { AluraDecoder } from "../../hooks/useAluraDecoder/useAluraDecoder.js";
 import { AluraEncoder } from "../../hooks/useAluraEncoder/useAluraEncoder.js";
 import { CopyValue } from "../../hooks/useCopyValue/useCopyValue.js";
+
 import styles from "../../styles/AluraEncoderDecoder.module.css";
+
+const aluraDictionary = {
+  a: "ai",
+  e: "enter",
+  i: "imes",
+  o: "ober",
+  u: "ufat",
+};
 
 export function AluraEncoderDecoder() {
   const { input, setInput, output, setOutput } = useContext(InputContext);
-  const aluraDictionary = {
-    a: "ai",
-    e: "enter",
-    i: "imes",
-    o: "ober",
-    u: "ufat",
-  };
 
   return (
     <div className={styles.main}>
