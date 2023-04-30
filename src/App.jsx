@@ -1,7 +1,9 @@
-import "./styles/App.css";
 import React from "react";
+
 import { AluraEncoderDecoder } from "./components/EncoderDecoder/AluraEncoderDecoder";
 import InputContextProvider from "./context/inputContext/inputContext";
+
+import "./styles/App.css";
 
 function App() {
   return (
