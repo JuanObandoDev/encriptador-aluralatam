@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/encriptador-aluralatam/static/css/main.0ec89b75.css",
-    "main.js": "/encriptador-aluralatam/static/js/main.01422c2e.js",
+    "main.css": "/encriptador-aluralatam/static/css/main.4cd5142d.css",
+    "main.js": "/encriptador-aluralatam/static/js/main.9d127da9.js",
     "index.html": "/encriptador-aluralatam/index.html",
-    "main.0ec89b75.css.map": "/encriptador-aluralatam/static/css/main.0ec89b75.css.map",
-    "main.01422c2e.js.map": "/encriptador-aluralatam/static/js/main.01422c2e.js.map"
+    "main.4cd5142d.css.map": "/encriptador-aluralatam/static/css/main.4cd5142d.css.map",
+    "main.9d127da9.js.map": "/encriptador-aluralatam/static/js/main.9d127da9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ec89b75.css",
-    "static/js/main.01422c2e.js"
+    "static/css/main.4cd5142d.css",
+    "static/js/main.9d127da9.js"
   ]
 }
