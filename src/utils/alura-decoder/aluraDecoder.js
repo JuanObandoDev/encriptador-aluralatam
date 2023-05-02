@@ -6,7 +6,7 @@ const vowels = {
   u: "ufat",
 };
 
-export const UseAluraDecoder = (str, dict = vowels) => {
+export const aluraDecoder = (str, dict = vowels) => {
   let reverseDict = Object.fromEntries(
     Object.entries(dict).map(([key, value]) => [value, key])
   );
