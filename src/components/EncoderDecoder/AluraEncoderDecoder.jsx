@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 
 import { InputContext } from "../../context/inputContext/inputContext";
-import { UseAluraDecoder } from "../../hooks/useAluraDecoder/useAluraDecoder.js";
-import { UseAluraEncoder } from "../../hooks/useAluraEncoder/useAluraEncoder.js";
-import { UseCopyValue } from "../../hooks/useCopyValue/useCopyValue.js";
+import { aluraDecoder } from "../../utils/alura-decoder/aluraDecoder.js";
+import { aluraEncoder } from "../../utils/alura-encoder/aluraEncoder.js";
+import { copyValue } from "../../utils/copy-value/copyValue.js";
 
 import styles from "../../styles/AluraEncoderDecoder.module.css";
 
@@ -33,13 +33,13 @@ export function AluraEncoderDecoder() {
         <div className={styles.Btns}>
           <button
             className={styles.aluraEncoderBtn}
-            onClick={() => setOutput(UseAluraEncoder(input, aluraDictionary))}
+            onClick={() => setOutput(aluraEncoder(input, aluraDictionary))}
           >
             Enconder
           </button>
           <button
             className={styles.aluraDecoderBtn}
-            onClick={() => setOutput(UseAluraDecoder(input, aluraDictionary))}
+            onClick={() => setOutput(aluraDecoder(input, aluraDictionary))}
           >
             Decoder
           </button>
@@ -48,7 +48,7 @@ export function AluraEncoderDecoder() {
       <div className={styles.out}>
         <h1 className={styles.titleOut}>Output</h1>
         <p className={styles.output}>{output}</p>
-        <button className={styles.copyBtn} onClick={() => UseCopyValue(output)}>
+        <button className={styles.copyBtn} onClick={() => copyValue(output)}>
           Copy
         </button>
       </div>
